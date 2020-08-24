@@ -1,0 +1,196 @@
+.AccountPage {
+  // width: 980px;
+  // margin: 60px auto;
+  // padding: 60px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  
+
+}
+
+.AccountTop{
+  width: 100vw;
+  background-color: #FFEFD5;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.AccountTop__main{
+  position: absolute;
+}
+
+.login-page{
+  width: 100vw;
+  height: 100vh;
+  
+}
+
+
+.AccountPage__container{
+  border: 2px solid #fff;
+  width: 420px;
+  height: 650px;
+  
+  position: relative;
+  margin: 30px;
+  padding: 10px;
+}
+
+.AccountPage__title {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 200;
+  text-align: center;
+  color: #fff;
+
+  h2 {
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+    font-size: 40px;
+    color: #fff;
+    &:after {
+      content: "";
+      display: block;
+      width: 60px;
+      margin-top: 5px;
+    }
+  }
+
+  .Button {
+    margin-top: 20px;
+    color: #fff;
+    background-color: #ccc;
+  }
+}
+
+.AccountPage__form {
+  width: 90%;
+  
+}
+
+.FormField {
+  margin-bottom: 10px;
+  &__label--normal {
+    padding: 10px 10px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 200;
+    i {
+      font-size: 11px;
+    }
+    .field_with_errors {
+      display: inline-block;
+      color: #d65f4c;
+      font-weight: 400;
+    }
+  }
+  &__input--normal {
+    input {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 12px;
+      letter-spacing: 1px;
+    }
+    .field_with_errors {
+      position: relative;
+
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 5px;
+        background-color: #d65f4c;
+      }
+    }
+  }
+}
+
+.Button {
+  display: inline-block;
+  height: 50px;
+  padding: 0 30px;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-align: center;
+  border: none;
+  border-radius: 2px;
+  text-decoration: none;
+}
+
+.UserButton {
+  margin-top: 20px;
+  color: #fff;
+  background-color: #38aef0;
+}
+
+#error_explanation {
+  margin: 20px 0;
+  padding: 20px 30px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+
+  h2 {
+    margin-bottom: 10px;
+    color: #d65f4c;
+    font-size: 14px;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 17px;
+    list-style: square;
+  }
+
+  li {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+  }
+}
+
+.App-explain1{
+  display: flex;
+  justify-content: space-around;
+}
+
+.App-explain1__text{
+  margin-top: 350px;
+}
+
+.App-explain1__image{
+  margin-top: 350px;
+}
+
+.App-explain2{
+  display: flex;
+  justify-content: space-around;
+}
+
+.App-explain2__text{
+  margin-top: 50px;
+}
+
+.App-explain2__image{
+  margin-top: 50px;
+}
+
+.App-explain3{
+  display: flex;
+  justify-content: space-around;
+}
+
+.App-explain3__text{
+  margin-top: 50px;
+}
+
+.App-explain3__image{
+  margin-top: 50px;
+}
