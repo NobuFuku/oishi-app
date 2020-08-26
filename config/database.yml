@@ -52,3 +52,6 @@ production:
   database: oishi_app_production
   username: oishi_app
   password: <%= ENV['OISHI_APP_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
