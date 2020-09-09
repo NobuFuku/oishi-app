@@ -1,2 +1,60 @@
-%h1 Plays#show
-%p Find me in app/views/plays/show.html.haml
+<script>
+  $(document).ready(function(){
+   $('.slider').bxSlider();
+  });
+ </script>
+
+
+ </head>
+ <body>
+  <header>
+   <div class = "top-contents">
+    <img src = "image/oisi-app-logo.png" alt = ロゴ class = "logo-image">
+   </div>
+
+  </header>
+
+<main>
+<div class = "main-contents">
+<ul class="slider">
+<li>
+<img src="image/tomato-girl.jpg" alt="写真" >
+</li>
+<li>
+<img src="image/tomato-boy.jpg" alt="写真" >
+</li>
+<li>
+<img src="image/cherry.jpg" alt="写真" >
+</li>
+<li>
+<img src="image/strawberry.jpg" alt="写真" >
+</li>
+</ul>
+</div>
+<!-- <ul class = explain-box-one>
+<li class = explain-image></li>
+<li class = explain-text></li>
+</ul> -->
+<div class = "start-box">
+<img src="image/pushstart2.png" alt="スタート" class= "push-start">
+</div>
+
+<!-- 選択問題 -->
+<section class="container-box">
+<p id="question"></p>
+<ul id="choices" id="cherry" img src="image/cherry.jpg" ></ul>
+<div id="btn" class="disabled" > Next </div>
+
+<section id="result" class='hidden'>
+<p>Score: </p>
+<a href= "">Replay?</a>
+
+</section>
+</section>
+<script src="js/main.js"></script>
+</main>
+
+</body>
+</html>
+.ReturnTop
+  = link_to 'もどる' ,root_path 
