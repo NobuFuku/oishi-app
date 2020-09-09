@@ -1,25 +1,15 @@
 .Chat
-  -# .RightHeader
-  -#   .RightHeader__group
-  -#     .RightHeader__groupName
-  -#       グループ名
-  -#     %ul.RightHeader__memberList
-  -#       Member：
-  -#       %li.RightHeader__member
-  -#         ユーザー名
-  -#   = link_to '#',class: "RightHeader__editButton" do
-  -#     Edit
   .MessageField
     .MessageBox
       .MessageInfo
-        %span.image
-          = image_tag src="/assets/image2.jpg", size: "400x400"
-      .Message
-        %p.Message__content
-          753
+        .Message
+          %p.Message__content
+            = text_field :item_name, placeholder: 'タイトル', class:'Message__content__title'
+            = text_field :item_name, placeholder: '本文', class:'Message__content__text'
+
         %p.Message__date
           2020/2/2 12:22
-
+      
       .MessageInfo__two
         %span.image
           = image_tag src="/assets/image4.jpg", size: "400x400"
@@ -38,12 +28,4 @@
           %p.Message__three__date
             2020/2/2 12:22
 
-      
-  -# .Footer
-  -#   %form.Form
-  -#     .Form__contents
-  -#       %input.Form__inputContent{type: 'text', placeholder: 'type a message'}
-  -#       %label.Form__inputImage
-  -#         = icon('far', 'image', class: 'Form__icon')
-  -#         %input.Hidden{type: 'file'}
-  -#     %input.Form__submit{type: 'submit', value: 'Send'}    
+
